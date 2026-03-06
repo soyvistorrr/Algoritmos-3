@@ -30,6 +30,16 @@ Para lograr esto, se implementa la función auxiliar `esSeguro`. Antes de hacer 
 
 Si alguna de estas tres condiciones no se cumple, la función `esSeguro` retorna `false`. Esto descarta la rama de ejecución inmediatamente, evitando que el programa evalúe configuraciones inviables y garantizando que encuentre la solución (o determine que no la hay) en un tiempo razonable.
 
+## Complejidad del Algoritmo
+
+### Complejidad de Tiempo: $O(9^n)$
+
+Donde $n$ es la cantidad de casillas vacías. El Backtracking explora un árbol de espacio de estados. En el peor de los casos, cada una de las $n$ casillas tiene 9 "acciones aplicables" (los números del 1 al 9). Aunque la función `esSeguro` realiza una poda (pruning) para descartar rápidamente las ramas inválidas y acelerar el tiempo de ejecución real, la cota superior teórica sigue siendo exponencial, lo cual es típico en problemas que no tienen una solución eficiente conocida.
+
+### Complejidad de Espacio: $O(n)$
+
+Donde $n$ es la cantidad de casillas vacías. El Backtracking es esencialmente un recorrido DFS (Búsqueda en Profundidad) sobre un grafo implícito. Al implementarlo de forma recursiva, utiliza la pila del sistema (LIFO). La profundidad máxima de esta pila será exactamente $n$ (el total de llamadas necesarias para alcanzar el estado meta). Por su parte, la matriz del tablero ocupa un espacio constante $O(1)$.
+
 ## Ejecución
 
 Para compilar y ejecutar el programa:
