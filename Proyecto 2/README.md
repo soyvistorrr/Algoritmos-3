@@ -1,8 +1,6 @@
-# Proyecto II: Mundo Chiquito
+# Proyecto 2: Mundo Chiquito
 
-**Universidad Simón Bolívar**
-**Departamento de Computación y Tecnología de la Información**
-**CI-2693 - Laboratorio de Algoritmos y Estructuras III (Enero-Marzo 2026)**
+**Curso:** CI-2693 - Laboratorio de Algoritmos y Estructuras III
 
 ## Integrantes
 
